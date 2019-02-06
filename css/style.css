@@ -1,0 +1,287 @@
+*,html,body
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+button,h1,h2,.grid-item
+{
+    font-family: 'Major Mono Display', monospace;
+}
+
+h3,p{
+    font-family: 'Hind Madurai', sans-serif;
+}
+header
+{
+    height: 70x;
+    line-height: 70px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+a
+ {
+    color: black;
+    text-decoration: none;
+}
+h1:hover
+{
+    color: red;
+    text-decoration: none;
+}
+
+ul
+{
+    list-style: none;
+}
+
+ul li
+{
+    display: inline-block;
+}
+
+button
+{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+header nav
+{
+    float: left;
+    margin-left: 50px;
+}
+
+header nav ul li
+{
+    padding-right: 20px;
+    color: grey;
+    font-weight: bold;
+    transition: all 0.5s ease-in;
+}
+
+header nav ul li:hover
+{
+    color: red;
+    text-decoration: none;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 250px 250px;
+    margin-top: 50px;
+    padding: 50px;
+    grid-gap: 50px;
+    background-image: linear-gradient(90deg, rgba(32, 29, 216, 0.842),white);
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 1);
+   overflow: auto;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 130px;
+  }
+
+  .grid-item :hover{
+      color:red;
+  }
+
+  .responses .grid-container{
+    margin-top: 15px;
+      grid-template-columns: 45% 45%;
+      grid-template-rows: 140px 140px 140px 140px;
+      grid-gap: 20px;
+      background-image: none;
+font-family: initial;  }
+
+  .responses .grid-item{
+    background-image: linear-gradient(90deg, rgb(230, 252, 169), white);
+    padding: 10px;
+    text-align: left;
+    font-family: initial;
+
+}
+.main h1
+{
+    position: absolute;
+    top: 200px;
+    right:50px;
+}
+
+section
+{
+    padding-top: 50px;
+    background-color: white;
+    width: 100%;
+    min-height: 850px;
+    /* display: flex; */
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+
+h2
+{
+    display: inline-block;
+    text-align: right;
+    position: absolute;
+    right: 50px;
+}
+
+.main-background
+{
+    background-image: linear-gradient(90deg, red, pink);
+    width: 90%;
+    height: 630px;
+    z-index: -1;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.about
+{
+  margin-top: 100px;
+  min-height: 665px;
+}
+
+.about-background
+{
+    background-image: linear-gradient(90deg, rgb(95, 81, 223), pink);
+    width: 90%;
+    height: 500px;
+    z-index: -1;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    /* overflow: hidden; */
+    position: relative;
+}
+
+.about-text
+{
+  width: 300px;
+  height: 50%;
+  display: inline-block;
+  position: absolute;
+  top: 20%;
+  left: 100px;
+  background-color: white;
+  padding: 20px;
+}
+
+.about-text p:hover{
+  color: red;
+}
+
+.about h3, .about p{
+  z-index: 1;
+  display: inline;
+  position: relative;
+
+}
+
+.about p
+{
+
+  font-size: 14px;
+}
+
+#github
+{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+#github:hover
+{
+  color: red;
+}
+
+ @media only screen and (max-width: 500px) {
+
+section
+{
+  position: relative;
+}
+   .projects .grid-container {
+       display: grid;
+       grid-template-columns: 100%;
+       grid-template-rows: 100px 100px 100px 100px;
+       padding: 20px;
+       grid-gap: 20px;
+       background-image: linear-gradient(180deg, rgba(32, 29, 216, 0.842),white);
+       height: 500px;
+     }
+   .projects .grid-item
+   {
+     padding-top: 20%;
+   font-size: 10px;
+   }
+
+   .responses .grid-container{
+     margin-top: 40px;
+     width: 100%;
+       grid-template-columns: 100%;
+       grid-template-rows: 150px 150px 150px 150px 150px 150px 150px;
+       grid-gap: 15px;
+       background-image: none;
+       padding: 0;
+ font-family: initial;  }
+
+   .responses .grid-item{
+     background-image: linear-gradient(90deg, rgb(230, 252, 169), white);
+     padding: 10px;
+     text-align: left;
+     font-family: initial;
+ }
+
+   .about-text
+   {
+     width: 50%;
+     margin-top: 100px;
+   }
+
+   .main-background
+   {
+       background-image: linear-gradient(90deg, red, pink);
+       z-index: 0;
+       display: inline-block;
+       padding: 0;
+       margin: 0;
+       position: relative;
+       top: 0;
+       left: 0;
+       height: 600px;
+
+   }
+
+
+   .about-background
+   {
+       background-image: linear-gradient(90deg, rgb(95, 81, 223), pink);
+       width: 50%
+       height: 95%;
+       z-index: 0;
+       display: inline-block;
+       padding: 0;
+       margin: 0;
+       position: relative;
+       top:100px;
+       left: 0;
+   }
+}
